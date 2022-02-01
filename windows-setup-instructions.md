@@ -11,6 +11,7 @@ There are 5 steps in this guide:
 4. Setup SSH Keys for GitHub
 
    4.1 Add SSH Keys to GitHub
+   4.2 Check SSH & GitHub Setup
 
 ## 1. Install git & Git Bash
 
@@ -68,10 +69,20 @@ We will use a tool called `nvm` to install NodeJS - [Link to GitHub Repository](
    ```
 3. 
 
-## 5| Setup SSH Keys for Github
+## 4. Setup SSH Keys for Github
 
 An SSH key is an access credential for the SSH (secure shell) network protocol. This authenticated and encrypted secure network protocol is used for remote communication between machines on an unsecured open network. SSH is used for remote file transfer, network management, and remote operating system access.
 
 We will need SSH Keys in order to push our code to GitHub.
 
-### 5.1| Adding SSH Keys onto Github account
+### 4.1. Adding SSH Keys onto Github account
+
+### 4.2 Check that SSH & Github are setup correctly
+
+In your terminal, run the following command:
+
+`ssh -T git@github.com`
+
+If everything is correctly setup, you should see the following message:
+
+`Hi <YOUR_GITHUB_USERNAME>! You've successfully authenticated, but GitHub does not provide shell access.`

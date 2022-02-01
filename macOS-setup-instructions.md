@@ -3,8 +3,8 @@
 There are 6 steps in this guide:
 
 1. Setup of Terminal.App
-2. Install Homebrew
-3. Install git
+2. Install git
+3. Install Homebrew
 4. Install Visual Studio Code
 
    4.1 Install extensions
@@ -14,7 +14,9 @@ There are 6 steps in this guide:
 
    6.1 Add SSH Keys to GitHub
 
-## 1| Setting up Terminal.app
+   6.2 Check SSH & GitHub Setup
+
+## 1. Setting up Terminal.app
 
 The Terminal is a program that developers use to run commands that tell the operating system (or another program), to perform specific tasks.
 
@@ -29,6 +31,8 @@ On macOS we can launch the terminal in the following ways.
 - Press enter or click on the Terminal application
 
 ![Launch Terminal.app](images/macOSTerminalLaunchSpotlight.png)
+
+_Note_ - in your Spotligh Search, `Terminal.app` might just be called `Terminal` without the `.app` at the end. It corresponds to the same program.
 
 **Option 2:** from Launchpad
 
@@ -46,13 +50,47 @@ On macOS we can launch the terminal in the following ways.
 
 ![Pin to Launchbar](images/macOSTerminalPinToToolbar.png)
 
-## 2| Install Homebrew
+## 2. Install git (Command Line Tools)
+
+`git` is a program that allows developers to create snapshots of their code (backups) so that it is very easy to go back to a previous version in case we make some big mistakes in our code, or collaborate with other developers, when we end up writing code in the same files.
+
+On macOS, `git` is installed with the `Command Line Tools` package for `XCode`, which is a required tool to install Homebrew (step 3.)
+
+1. Launch the terminal app
+2. Type this command and press enter
+
+   `xcode-select --install`
+
+   If you have Command Line Tools already installed, the above command will return an error. You can jump to step 7.
+
+3. If you don't have the tools already installed, a popup will appear. Choose the option `Install`.
+4. Wait for the package to download and install.
+5. Quit the terminal completely
+6. Open the terminal again
+7. Check that git is installed by typing the following command
+
+   `git -v`
+
+   The above should produce something similar to:
+
+   ```bash
+   > git --version
+   git version 2.24.3 (Apple Git-128)
+   ```
+
+## 3. Install Homebrew
 
 [Homebew homepage](https://brew.sh/)
 
 Homebrew is a program that runs in the terminal that developers use to install other programs/software and libraries that we want to use for creating or running our own programs.
 
 Homebrew simplifies installing dependencies.
+
+Homebrew has the following [installation requirements](https://docs.brew.sh/Installation):
+
+- macOS 10.15+ (older versions work)
+- A 64-bit Intel CPU or Apple Silicon CPU
+- Command Line Tools (CLT) for Xcode (from xcode-select --install or https://developer.apple.com/download/all/)
 
 1. Launch the Terminal app
 2. Paste the following command in the terminal (`CMD+V` or right-click -> paste)
@@ -68,27 +106,7 @@ Homebrew simplifies installing dependencies.
 
 5. You're good to go!
 
-## 3| Install git
-
-`git` is a program that allows developers to create snapshots of their code (backups) so that it is very easy to go back to a previous version in case we make some big mistakes in our code, or collaborate with other developers, when we end up writing code in the same files.
-
-1. Launch the Terminal app
-2. Type this command and press enter
-
-   `brew install git`
-
-3. Check that git is installed by typing the following command
-
-   `git -v`
-
-   Thie above should produce something similar to:
-
-   ```bash
-   > git --version
-   git version 2.24.3 (Apple Git-128)
-   ```
-
-## 4| Install VSCode
+## 4. Install VSCode
 
 > Note: we recommend installing VSCode using `brew` because `brew` takes care of several additional setup steps that are time consuming to do manually (for example, being able to open VSCode from the terminal).
 
@@ -106,21 +124,23 @@ Homebrew simplifies installing dependencies.
 4. Launch the application by running `code` as a command in the terminal
 5. Pin the application to your launchbar, the same way as we did for the Terminal app so that you have quick access to it.
 
-### 4.1| Install additional VSCode Extensions
+### 4.1. Install additional VSCode Extensions
 
 Now follow the instructions for setting up the extensions for VS Code.
 
 [Setup VSCode Extensions](vscode-setup-instructions.md)
 
-## 5| Install NodeJS
+## 5. Install NodeJS
 
 [NodeJS](https://nodejs.org/en/) is a runtime environment for JavaScript. It allows us to build and run javascript applications. We shall make extensive use of this throughout the course.
 
 We are following the instructions [from this guide](https://www.taniarascia.com/setting-up-a-brand-new-mac-for-development/#nodejs) to install NodeJS on our machine. The summary of the instructions is below.
 
+> **DO NOT** install Node via the NodeJS website. If you are are getting an error in your terminal following the steps in this guide use the support channel and ask for help
+
 1. Install NVM
 
-   `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash`
+   `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh . bash`
 
    If you get an error that `curl` is not installed, you can run `brew install curl`
 
@@ -138,11 +158,13 @@ We are following the instructions [from this guide](https://www.taniarascia.com/
 
 Further reading on nvm: [https://github.com/nvm-sh/nvm](https://github.com/nvm-sh/nvm)
 
-## 6| Setup SSH Keys for Github
+## 6. Setup SSH Keys for Github
 
 An SSH key is an access credential for the SSH (secure shell) network protocol. This authenticated and encrypted secure network protocol is used for remote communication between machines on an unsecured open network. SSH is used for remote file transfer, network management, and remote operating system access.
 
 We will need SSH Keys in order to push our code to GitHub.
+
+> GitHub have a [detailed guide for you to follow](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent), although we have summarised some of the key steps here.
 
 1. Open Terminal app
 2. Run the following command (will create a hidden folder called `.ssh`, if it doesn't exist already)
@@ -190,7 +212,7 @@ We will need SSH Keys in order to push our code to GitHub.
 
    **NOTE:** you will have to replace `~/.ssh/githubkeys` with the key filename that you chose in step 4.
 
-### 6.1| Adding SSH Keys onto Github account
+### 6.1. Adding SSH Keys onto Github account
 
 Once you have generated SSH Keys on your machine, we need to add the public key to our github account so that github can authenticate your machine and allow you to push code to github.
 
@@ -216,3 +238,13 @@ Once you have generated SSH Keys on your machine, we need to add the public key 
    ![Github SSH Key](images/github-add-ssh-key.png)
 
 8. Click `Add SSH Key`
+
+### 6.2 Check that SSH & Github are setup correctly
+
+In your terminal, run the following command:
+
+`ssh -T git@github.com`
+
+If everything is correctly setup, you should see the following message:
+
+`Hi YOUR_GITHUB_USERNAME! You've successfully authenticated, but GitHub does not provide shell access.`
