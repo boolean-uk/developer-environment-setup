@@ -14,6 +14,8 @@ There are 6 steps in this guide:
 
    6.1 Add SSH Keys to GitHub
 
+   6.2 Check SSH & GitHub Setup
+
 ## 1. Setting up Terminal.app
 
 The Terminal is a program that developers use to run commands that tell the operating system (or another program), to perform specific tasks.
@@ -134,6 +136,8 @@ Now follow the instructions for setting up the extensions for VS Code.
 
 We are following the instructions [from this guide](https://www.taniarascia.com/setting-up-a-brand-new-mac-for-development/#nodejs) to install NodeJS on our machine. The summary of the instructions is below.
 
+> **DO NOT** install Node via the NodeJS website. If you are are getting an error in your terminal following the steps in this guide use the support channel and ask for help
+
 1. Install NVM
 
    `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh . bash`
@@ -159,6 +163,8 @@ Further reading on nvm: [https://github.com/nvm-sh/nvm](https://github.com/nvm-s
 An SSH key is an access credential for the SSH (secure shell) network protocol. This authenticated and encrypted secure network protocol is used for remote communication between machines on an unsecured open network. SSH is used for remote file transfer, network management, and remote operating system access.
 
 We will need SSH Keys in order to push our code to GitHub.
+
+> GitHub have a [detailed guide for you to follow](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent), although we have summarised some of the key steps here.
 
 1. Open Terminal app
 2. Run the following command (will create a hidden folder called `.ssh`, if it doesn't exist already)
@@ -232,3 +238,13 @@ Once you have generated SSH Keys on your machine, we need to add the public key 
    ![Github SSH Key](images/github-add-ssh-key.png)
 
 8. Click `Add SSH Key`
+
+### 6.2 Check that SSH & Github are setup correctly
+
+In your terminal, run the following command:
+
+`ssh -T git@github.com`
+
+If everything is correctly setup, you should see the following message:
+
+`Hi YOUR_GITHUB_USERNAME! You've successfully authenticated, but GitHub does not provide shell access.`

@@ -13,6 +13,8 @@ There are 5 steps in this guide:
 
    5.1 Add SSH Keys to GitHub
 
+   5.2 Check SSH & GitHub Setup
+
 ## 1. Setting up Command Prompt
 
 The Terminal is a program that developers use to run commands that tell the operating system (or another program), to perform specific tasks.
@@ -52,3 +54,13 @@ An SSH key is an access credential for the SSH (secure shell) network protocol. 
 We will need SSH Keys in order to push our code to GitHub.
 
 ### 5.1. Adding SSH Keys onto Github account
+
+### 5.2 Check that SSH & Github are setup correctly
+
+In your terminal, run the following command:
+
+`ssh -T git@github.com`
+
+If everything is correctly setup, you should see the following message:
+
+`Hi YOUR_GITHUB_USERNAME! You've successfully authenticated, but GitHub does not provide shell access.`
