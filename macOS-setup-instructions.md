@@ -39,7 +39,7 @@ On macOS we can launch the terminal in the following ways.
 2. In the Launcher toolbar, right-click on the Terminal App -> Options -> Keep in Dock
 3. You can now launch the Terminal by clicking in the launcher toolbar
 
-![Pin to Launchbar](images/macOSTerminalPintoToolbar.png)
+![Pin to Launchbar](images/macOSTerminalPinToToolbar.png)
 
 ## 2| Install Homebrew
 
