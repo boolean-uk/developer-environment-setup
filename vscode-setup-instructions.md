@@ -28,3 +28,21 @@ Please add the following extensions to your VSCode:
 3. Live Server
 
    ![Live Server](images/liveserver-extension.png)
+
+4. Markdown Extensions
+
+   Markdown All in One, Markdown PDF and markdownlint
+
+   ![Markdown Extensions](images/markdown-extensions.png)
+
+5. Project Manager
+
+   ![Project Manager](images/projectmanager-extension.png)
+
+6. REST Client
+
+   ![REST Client](images/restclient-extension.png)
+
+7. TODO Highlight
+
+   ![TODO Highlight](images/todohighlight-extension.png)
