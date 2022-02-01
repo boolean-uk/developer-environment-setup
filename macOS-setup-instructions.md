@@ -6,8 +6,13 @@ There are 6 steps in this guide:
 2. Install Homebrew
 3. Install git
 4. Install Visual Studio Code
+
+   4.1 Install extensions
+
 5. Install NodeJS
 6. Setup SSH Keys for GitHub
+
+   6.1 Add SSH Keys to GitHub
 
 ## 1| Setting up Terminal.app
 
@@ -101,6 +106,8 @@ Homebrew simplifies installing dependencies.
 4. Launch the application by running `code` as a command in the terminal
 5. Pin the application to your launchbar, the same way as we did for the Terminal app so that you have quick access to it.
 
+### 4.1| Install additional VSCode Extensions
+
 Now follow the instructions for setting up the extensions for VS Code.
 
 [Setup VSCode Extensions](vscode-setup-instructions.md)
@@ -183,7 +190,7 @@ We will need SSH Keys in order to push our code to GitHub.
 
    **NOTE:** you will have to replace `~/.ssh/githubkeys` with the key filename that you chose in step 4.
 
-### Adding SSH Keys onto Github account
+### 6.1| Adding SSH Keys onto Github account
 
 Once you have generated SSH Keys on your machine, we need to add the public key to our github account so that github can authenticate your machine and allow you to push code to github.
 

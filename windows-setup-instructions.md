@@ -5,8 +5,13 @@ There are 5 steps in this guide:
 1. Setup Command Prompt
 2. Install git & Git Bash
 3. Install Visual Studio Code
+
+   3.1 Install extensions
+
 4. Install NodeJS
 5. Setup SSH Keys for GitHub
+
+   5.1 Add SSH Keys to GitHub
 
 ## 1| Setting up Command Prompt
 
@@ -30,6 +35,8 @@ With the Terminal program we can install softwares that can be run from the term
 4. Drag `Visual Studio Code.app` to your `Applications` folder.
 5. Launch the application and pin the application to your launchbar, the same way as we did for the Terminal app.
 
+### 3.1| Install additional VSCode Extensions
+
 Now follow the instructions for setting up the extensions for VS Code.
 
 [Setup VSCode Extensions](vscode-setup-instructions.md)
@@ -44,4 +51,4 @@ An SSH key is an access credential for the SSH (secure shell) network protocol. 
 
 We will need SSH Keys in order to push our code to GitHub.
 
-### Adding SSH Keys onto Github account
+### 5.1| Adding SSH Keys onto Github account
