@@ -3,8 +3,8 @@
 There are 6 steps in this guide:
 
 1. Setup of Terminal.App
-2. Install Homebrew
-3. Install git
+2. Install git
+3. Install Homebrew
 4. Install Visual Studio Code
 
    4.1 Install extensions
@@ -48,13 +48,47 @@ _Note_ - in your Spotligh Search, `Terminal.app` might just be called `Terminal`
 
 ![Pin to Launchbar](images/macOSTerminalPinToToolbar.png)
 
-## 2. Install Homebrew
+## 2. Install git (Command Line Tools)
+
+`git` is a program that allows developers to create snapshots of their code (backups) so that it is very easy to go back to a previous version in case we make some big mistakes in our code, or collaborate with other developers, when we end up writing code in the same files.
+
+On macOS, `git` is installed with the `Command Line Tools` package for `XCode`, which is a required tool to install Homebrew (step 3.)
+
+1. Launch the terminal app
+2. Type this command and press enter
+
+   `xcode-select --install`
+
+   If you have Command Line Tools already installed, the above command will return an error. You can jump to step 7.
+
+3. If you don't have the tools already installed, a popup will appear. Choose the option `Install`.
+4. Wait for the package to download and install.
+5. Quit the terminal completely
+6. Open the terminal again
+7. Check that git is installed by typing the following command
+
+   `git -v`
+
+   The above should produce something similar to:
+
+   ```bash
+   > git --version
+   git version 2.24.3 (Apple Git-128)
+   ```
+
+## 3. Install Homebrew
 
 [Homebew homepage](https://brew.sh/)
 
 Homebrew is a program that runs in the terminal that developers use to install other programs/software and libraries that we want to use for creating or running our own programs.
 
 Homebrew simplifies installing dependencies.
+
+Homebrew has the following [installation requirements](https://docs.brew.sh/Installation):
+
+- macOS 10.15+ (older versions work)
+- A 64-bit Intel CPU or Apple Silicon CPU
+- Command Line Tools (CLT) for Xcode (from xcode-select --install or https://developer.apple.com/download/all/)
 
 1. Launch the Terminal app
 2. Paste the following command in the terminal (`CMD+V` or right-click -> paste)
@@ -69,26 +103,6 @@ Homebrew simplifies installing dependencies.
    `brew update`
 
 5. You're good to go!
-
-## 3. Install git
-
-`git` is a program that allows developers to create snapshots of their code (backups) so that it is very easy to go back to a previous version in case we make some big mistakes in our code, or collaborate with other developers, when we end up writing code in the same files.
-
-1. Launch the Terminal app
-2. Type this command and press enter
-
-   `brew install git`
-
-3. Check that git is installed by typing the following command
-
-   `git -v`
-
-   Thie above should produce something similar to:
-
-   ```bash
-   > git --version
-   git version 2.24.3 (Apple Git-128)
-   ```
 
 ## 4. Install VSCode
 
