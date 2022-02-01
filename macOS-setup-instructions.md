@@ -87,11 +87,8 @@ Homebrew simplifies installing dependencies.
 
    `brew install --cask visual-studio-code`
 
-4. Visit [VSCode's download page](https://code.visualstudio.com/download)
-5. Download the macOS version
-6. Once downloaded, open Finder and locate the file in the `Downloads` folder. You might need to double click on the `.zip` file in order to unzip the file and obtain the `Visual Studio Code.app`
-7. Drag `Visual Studio Code.app` to your `Applications` folder.
-8. Launch the application and pin the application to your launchbar, the same way as we did for the Terminal app.
+4. Launch the application by running `code` as a command in the terminal
+5. Pin the application to your launchbar, the same way as we did for the Terminal app so that you have quick access to it.
 
 Now follow the instructions for setting up the extensions for VS Code.
 
@@ -101,4 +98,75 @@ Now follow the instructions for setting up the extensions for VS Code.
 
 ## Setup SSH Keys for Github
 
+1. Open Terminal app
+2. Run the following command (will create a hidden folder called `.ssh`, if it doesn't exist already)
+
+   `mkdir .ssh`
+
+3. Run the following command to move into the newly created directory
+
+   `cd .ssh`
+
+   Make sure you are in the `.ssh` folder. Run the command `pwd` and you should expect to see this output:
+
+   `/Users/YOUR_USERNAME/.ssh`
+
+4. Now we run the following command to generate a new SSH key and save it to our machine. Make sure you replace *your_email@example.com* with your email - this is just a name for the key and it allows you to recognise it.
+
+   `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
+
+   Once you press enter, you will be asked to choose a filename (you can go for `githubkeys`) and then a password. Make sure to note this down safely.
+
+   Once you have followed the instructions, you should see an output similar to this:
+
+   ![SSH Keygen](images/macOS-ssh-keygen.png)
+
+5. Now we need to update the configuration for SSH so that it knows to use the newly created key when you attempt to authenticate with github. Make sure you are in
+
+   Make sure you are in the `.ssh` folder. Run the command `pwd` in your Terminal and you should expect to see this output:
+
+   `/Users/YOUR_USERNAME/.ssh`
+
+   Now we try to create an empty `config` file, if it doesn't exist already by running:
+
+   `touch config`
+
+   Now run the command `code ./config` which will open the empty (or existing) `config` file directly in Visual Studio Code.
+
+   You now want to add the following configuration at the bottom of your `config` file and save:
+
+   ```
+   Host github.com
+     AddKeysToAgent yes
+     UseKeychain yes
+     IdentityFile ~/.ssh/githubkeys
+   ```
+
+   **NOTE:** you will have to replace `~/.ssh/githubkeys` with the key filename that you chose in step 4.
+
 ### Adding SSH Keys onto Github account
+
+Once you have generated SSH Keys on your machine, we need to add the public key to our github account so that github can authenticate your machine and allow you to push code to github.
+
+1. Open the Terminal app
+2. Open the public SSH key file that you created earlier by running
+
+   `code ~/.ssh/YOUR_GITHUB_SSH_KEY.pub`
+
+   Replace `YOUR_GITUBH_SSH_KEY` with the filename of the SSH key that you generated earlier.
+
+   The file should look something like:
+
+   ```
+   ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDHFR60xwGFKN5DHVaMKy7t6mwV0qFDHtLUkxQlUoMCN5Pmn3VXkiUminNDDVtYdDT0BQ70UTPXi6Q6GbinaYNvlOjKDeHnZoMltLcyqSK9EFjZVaUj8zXgX8dARgU+tROjNA6gj3gsO59zO5vqhrJZxWLtYisU3vuuUx2eKwwwIekzMMfoU6lej5l7VIKZ6l6cpxNnPvNKdPB8/cZHJqgVkXoJf+yx7Na5oC/LjEL3Ud4kRnKuEY5PkDYfKYsVQXcja+lgIKPswK5FwFXE5GyAXhlJOBW0EVkatqwXOD6XT6kcUnNsgmezUNbvvhJgV5oez4Y59jPVUWhwgO+eKrT6mKNthVWDddACClVpnN1iMSTgo+W5nfIL2yUOEZ+IvS5RvyUxLe5R4n5sHQDx1FF1oq8UXTquVmQyp1nmagPze7S7qezYsiTSDXTjZxlurhDeva0rLJZ8jD4fL/By4Hldp4zj4YEdw4VORzaQTNXHFL/QDcQfXzPUoDfFB3TUvEG4vqrkfjypkIWpzxCfjFBJqRwLqc+ri9Xtvv4mOBd9M0D1pSbToj6ubvbw1nrTgSyNQ5m9PPQa2ppWrps0N7y2fAjLVScjXUj897OJZehb9V0yM03UosRUNRjdiEA8usOqR+NInISXYH97jw+hILuewaSOb443aKfuDHAu48O1Bw== your_email@example.com
+   ```
+
+3. Select _all_ the text with `CMD+A` and copy it to clipboard with `CMD+C`
+4. Visit your [Github settings](https://github.com/settings/profile) page (requires login, then find your profile icon and the dropdown next to it will take you to the Settings page).
+5. From your Github Settings page, you will find the SSH and GPG Keys section in the left sidebar (alternatively, visit [https://github.com/settings/keys](https://github.com/settings/keys))
+6. Click the green `New SSH Key` button.
+7. Choose a title and paste the key you copied earlier with `CMD+V` (see the screenshot below)
+
+   ![Github SSH Key](images/github-add-ssh-key.png)
+
+8. Click `Add SSH Key`
