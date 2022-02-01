@@ -8,6 +8,8 @@ With the Terminal program we can install softwares that can be run from the term
 
 ## Install git & Git Bash
 
+`git` is a program that allows developers to create snapshots of their code (backups) so that it is very easy to go back to a previous version in case we make some big mistakes in our code, or collaborate with other developers, when we end up writing code in the same files.
+
 (PATH setup?)
 
 ## Install VSCode
