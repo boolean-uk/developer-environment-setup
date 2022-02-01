@@ -14,7 +14,7 @@ There are 6 steps in this guide:
 
    6.1 Add SSH Keys to GitHub
 
-## 1| Setting up Terminal.app
+## 1. Setting up Terminal.app
 
 The Terminal is a program that developers use to run commands that tell the operating system (or another program), to perform specific tasks.
 
@@ -29,6 +29,8 @@ On macOS we can launch the terminal in the following ways.
 - Press enter or click on the Terminal application
 
 ![Launch Terminal.app](images/macOSTerminalLaunchSpotlight.png)
+
+_Note_ - in your Spotligh Search, `Terminal.app` might just be called `Terminal` without the `.app` at the end. It corresponds to the same program.
 
 **Option 2:** from Launchpad
 
@@ -46,7 +48,7 @@ On macOS we can launch the terminal in the following ways.
 
 ![Pin to Launchbar](images/macOSTerminalPinToToolbar.png)
 
-## 2| Install Homebrew
+## 2. Install Homebrew
 
 [Homebew homepage](https://brew.sh/)
 
@@ -68,7 +70,7 @@ Homebrew simplifies installing dependencies.
 
 5. You're good to go!
 
-## 3| Install git
+## 3. Install git
 
 `git` is a program that allows developers to create snapshots of their code (backups) so that it is very easy to go back to a previous version in case we make some big mistakes in our code, or collaborate with other developers, when we end up writing code in the same files.
 
@@ -88,7 +90,7 @@ Homebrew simplifies installing dependencies.
    git version 2.24.3 (Apple Git-128)
    ```
 
-## 4| Install VSCode
+## 4. Install VSCode
 
 > Note: we recommend installing VSCode using `brew` because `brew` takes care of several additional setup steps that are time consuming to do manually (for example, being able to open VSCode from the terminal).
 
@@ -106,13 +108,13 @@ Homebrew simplifies installing dependencies.
 4. Launch the application by running `code` as a command in the terminal
 5. Pin the application to your launchbar, the same way as we did for the Terminal app so that you have quick access to it.
 
-### 4.1| Install additional VSCode Extensions
+### 4.1. Install additional VSCode Extensions
 
 Now follow the instructions for setting up the extensions for VS Code.
 
 [Setup VSCode Extensions](vscode-setup-instructions.md)
 
-## 5| Install NodeJS
+## 5. Install NodeJS
 
 [NodeJS](https://nodejs.org/en/) is a runtime environment for JavaScript. It allows us to build and run javascript applications. We shall make extensive use of this throughout the course.
 
@@ -120,7 +122,7 @@ We are following the instructions [from this guide](https://www.taniarascia.com/
 
 1. Install NVM
 
-   `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash`
+   `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh . bash`
 
    If you get an error that `curl` is not installed, you can run `brew install curl`
 
@@ -138,7 +140,7 @@ We are following the instructions [from this guide](https://www.taniarascia.com/
 
 Further reading on nvm: [https://github.com/nvm-sh/nvm](https://github.com/nvm-sh/nvm)
 
-## 6| Setup SSH Keys for Github
+## 6. Setup SSH Keys for Github
 
 An SSH key is an access credential for the SSH (secure shell) network protocol. This authenticated and encrypted secure network protocol is used for remote communication between machines on an unsecured open network. SSH is used for remote file transfer, network management, and remote operating system access.
 
@@ -190,7 +192,7 @@ We will need SSH Keys in order to push our code to GitHub.
 
    **NOTE:** you will have to replace `~/.ssh/githubkeys` with the key filename that you chose in step 4.
 
-### 6.1| Adding SSH Keys onto Github account
+### 6.1. Adding SSH Keys onto Github account
 
 Once you have generated SSH Keys on your machine, we need to add the public key to our github account so that github can authenticate your machine and allow you to push code to github.
 
