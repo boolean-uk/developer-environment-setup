@@ -19,11 +19,11 @@ Please add the following extensions to your VSCode:
 
 1. Prettier
 
-   ![Live Server](images/prettier-extension.png)
+   ![Prettier](images/prettier-extension.png)
 
 2. HTMLHint
 
-   ![Live Server](images/htmlhint-extension.png)
+   ![HTMLHint](images/htmlhint-extension.png)
 
 3. Live Server
 
