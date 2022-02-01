@@ -1,6 +1,15 @@
 # macOS Setup Instructions
 
-## Setting up Terminal.app
+There are 6 steps in this guide:
+
+1. Setup of Terminal.App
+2. Install Homebrew
+3. Install git
+4. Install Visual Studio Code
+5. Install NodeJS
+6. Setup SSH Keys for GitHub
+
+## 1| Setting up Terminal.app
 
 The Terminal is a program that developers use to run commands that tell the operating system (or another program), to perform specific tasks.
 
@@ -32,7 +41,7 @@ On macOS we can launch the terminal in the following ways.
 
 ![Pin to Launchbar](images/macOSTerminalPintoToolbar.png)
 
-## Install Homebrew
+## 2| Install Homebrew
 
 [Homebew homepage](https://brew.sh/)
 
@@ -54,7 +63,7 @@ Homebrew simplifies installing dependencies.
 
 5. You're good to go!
 
-## Install git
+## 3| Install git
 
 `git` is a program that allows developers to create snapshots of their code (backups) so that it is very easy to go back to a previous version in case we make some big mistakes in our code, or collaborate with other developers, when we end up writing code in the same files.
 
@@ -74,7 +83,9 @@ Homebrew simplifies installing dependencies.
    git version 2.24.3 (Apple Git-128)
    ```
 
-## Install VSCode
+## 4| Install VSCode
+
+> Note: we recommend installing VSCode using `brew` because `brew` takes care of several additional setup steps that are time consuming to do manually (for example, being able to open VSCode from the terminal).
 
 [Visual Studio Code](https://code.visualstudio.com) is a code editor. It allows us to manage the files in a project and to edit the code that we write. It comes with a large number of very useful features that make development faster and easier. We can also improve its functionality by installing many extensions.
 
@@ -94,9 +105,37 @@ Now follow the instructions for setting up the extensions for VS Code.
 
 [Setup VSCode Extensions](vscode-setup-instructions.md)
 
-## Install NodeJS
+## 5| Install NodeJS
 
-## Setup SSH Keys for Github
+[NodeJS](https://nodejs.org/en/) is a runtime environment for JavaScript. It allows us to build and run javascript applications. We shall make extensive use of this throughout the course.
+
+We are following the instructions [from this guide](https://www.taniarascia.com/setting-up-a-brand-new-mac-for-development/#nodejs) to install NodeJS on our machine. The summary of the instructions is below.
+
+1. Install NVM
+
+   `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash`
+
+   If you get an error that `curl` is not installed, you can run `brew install curl`
+
+2. Install the latest version of NodeJS
+
+   `nvm install node`
+
+3. Restart terminal and run the final command.
+
+   `nvm use node`
+
+4. Confirm that you are using the latest version of Node and npm.
+
+   `node -v && npm -v`
+
+Further reading on nvm: [https://github.com/nvm-sh/nvm](https://github.com/nvm-sh/nvm)
+
+## 6| Setup SSH Keys for Github
+
+An SSH key is an access credential for the SSH (secure shell) network protocol. This authenticated and encrypted secure network protocol is used for remote communication between machines on an unsecured open network. SSH is used for remote file transfer, network management, and remote operating system access.
+
+We will need SSH Keys in order to push our code to GitHub.
 
 1. Open Terminal app
 2. Run the following command (will create a hidden folder called `.ssh`, if it doesn't exist already)
