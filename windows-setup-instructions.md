@@ -22,11 +22,11 @@ There are 5 steps in this guide:
 
    1. **Select defaults for all options during the installation**.
 
-   2. When the installation is complete, press the `<Windows>` key and type `git` into the search to find the `git bash` app
+   2. When the installation is complete, press the `<Windows>` key and type `git` into the search box to find the `git bash` app
 
       ![Find git bash](images/find-git-bash.png)
 
-   3. Right click on the `git bash` app and click `Pin this program to the taskbar` so you can start it quickly.
+   3. Right click on the `git bash` app and click `Pin to taskbar` so you can start it quickly from the Taskbar.
 
       ![Pin git bash](images/pin-git-bash.png)
 
@@ -46,14 +46,14 @@ There are 5 steps in this guide:
 
       1. At the `$` prompt in the new window, type `git --version` and then `<Enter>` to check `git` is correctly installed. You should see something like the following text displayed:
 
-      ```text
-      git version 2.35.1.windows.1
+         ```text
+         git version 2.35.1.windows.1
 
-      user@PC-NAME MINGW ~
-      $
-      ```
+         user@PC-NAME MINGW ~
+         $
+         ```
 
-      1. Finally type `exit` and then `<Enter>` to close the window.
+      2. Finally type `exit` and then `<Enter>` to close the window.
 
 ## 2. Install VSCode
 
@@ -83,15 +83,16 @@ We will use a tool called `nvm` to install NodeJS - [Link to GitHub Repository](
 
    ```
 
-3. Install the latest version of NodeJS
+3. Once the above completes, close the current `git bash` window and open a new one before you continue.
+4. Install the latest version of NodeJS
 
    `nvm install node`
 
-4. Restart terminal and run the final command.
+5. Restart terminal and run the final command.
 
    `nvm use node`
 
-5. Confirm that you are using the latest version of Node and npm.
+6. Confirm that you are using the latest version of Node and npm.
 
    `node -v && npm -v`
 
