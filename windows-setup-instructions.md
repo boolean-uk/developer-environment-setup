@@ -20,16 +20,22 @@ There are 5 steps in this guide:
 1. Browse to the [Git Download for Windows page](https://git-scm.com/download/win) and select the `Standalone Installer (64-bit Git)` download - unless you have a `32-bit version of Windows`.
 2. Once the download is complete, run it from your browser's download bar.
    1. Select defaults for all options during the installation.
-   2. At the final step, select the check box to start `git bash` after installation is complete.
-      1. TODO: Pin a new Git Bash to the taskbar
-      2. TODO: In new window run `touch .bashrc`
-      3. TODO: Then open a new window and see `missing setup message related to .bash_profile`
-   3. When installation is complete, you will see a new `git bash` window. Right click on the `git bash` icon and click `Pin this program to the taskbar` so you can start it quickly.
+   2. When the imstallation is complete, press the `<Windows>` key and type `git` into the search to find the `git bash` app
 
-      ![Pin this program to the taskbar](images/pin-gitbash-to-taskbar.png)
+      ![Find git bash](images/find-git-bash.png)
 
-   4. Exit the `git bash` window by typing `exit` and then `<Enter>`
-   5. Open a new `git bash` window by clicking on it's icon in the Windows Taskbar
+   3. Right click on the `git bash` app and click `Pin this program to the taskbar` so you can start it quickly.
+
+      ![Pin git bash](images/pin-git-bash.png)
+
+   4. Click the `git bash` icon in the Taskbar to run it
+      1. Type the following text in the `git bash` window and then `<Enter>`
+      2. Type `exit` then `<Enter>` to close this window
+   5. Now click the `git bash` icon in the Taskbar to run it again
+      1. This time you should see some messages like `missing setup message related to .bash_profile`
+      2. `git bash` is now set up and ready for the next steps
+   6. Exit the `git bash` window by typing `exit` and then `<Enter>`
+   7. Open a new `git bash` window by clicking on it's icon in the Windows Taskbar
 
       1. At the `$` prompt in the new window, type `git --version` and then `<Enter>` to check `git` is correctly installed. You should see something like the following text displayed:
 
@@ -40,7 +46,7 @@ There are 5 steps in this guide:
         $
         ```
 
-      2. Again type `exit` and then `<Enter>` to close the window.
+      2. Finally type `exit` and then `<Enter>` to close the window.
 
 ## 2. Install VSCode
 
@@ -63,11 +69,10 @@ We will use a tool called `nvm` to install NodeJS - [Link to GitHub Repository](
 
 1. Open a new `git bash` window by clicking it's icon in the Windows Taskbar - set up in step 1 above.
 2. Paste the following command into the `git bash` window
-   
+
    ```text
    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
    ```
-3. 
 
 ## 4. Setup SSH Keys for Github
 
