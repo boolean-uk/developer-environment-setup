@@ -19,7 +19,8 @@ There are 5 steps in this guide:
 
 1. Browse to the [Git Download for Windows page](https://git-scm.com/download/win) and select the `Standalone Installer (64-bit Git)` download - unless you have a `32-bit version of Windows`.
 2. Once the download is complete, run it from your browser's download bar.
-   1. Select defaults for all options during the installation.
+
+   1. **Select defaults for all options during the installation**.
    2. At the final step, select the check box to start `git bash` after installation is complete.
       1. TODO: Pin a new Git Bash to the taskbar
       2. TODO: In new window run `touch .bashrc`
@@ -33,12 +34,12 @@ There are 5 steps in this guide:
 
       1. At the `$` prompt in the new window, type `git --version` and then `<Enter>` to check `git` is correctly installed. You should see something like the following text displayed:
 
-        ```text
-        git version 2.35.1.windows.1
+      ```text
+      git version 2.35.1.windows.1
 
-        user@PC-NAME MINGW ~
-        $
-        ```
+      user@PC-NAME MINGW ~
+      $
+      ```
 
       2. Again type `exit` and then `<Enter>` to close the window.
 
@@ -48,6 +49,7 @@ There are 5 steps in this guide:
 
 1. Visit [VSCode's download page](https://code.visualstudio.com/download) and select the `User Installer 64 bit` download - unless you have a `32 bit version of Windows`.
 2. Once the download is complete, run it from your browser's download bar.
+3. Launch VSCode and make sure to pin the software to the Taskbar for future access.
 
 ### 2.1 Install VSCode Extensions
 
@@ -63,11 +65,12 @@ We will use a tool called `nvm` to install NodeJS - [Link to GitHub Repository](
 
 1. Open a new `git bash` window by clicking it's icon in the Windows Taskbar - set up in step 1 above.
 2. Paste the following command into the `git bash` window
-   
+
    ```text
    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
    ```
-3. 
+
+3.
 
 ## 4. Setup SSH Keys for Github
 
