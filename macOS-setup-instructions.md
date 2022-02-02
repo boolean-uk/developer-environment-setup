@@ -237,6 +237,8 @@ Once you have generated SSH Keys on your machine, we need to add the public key 
 
    ![Github SSH Key](images/github-add-ssh-key.png)
 
+   **NOTE**: make sure that when you paste, you are not pasting whitespace (new lines, spaces).
+
 8. Click `Add SSH Key`
 
 ### 6.2 Check that SSH & Github are setup correctly

@@ -31,18 +31,27 @@ There are 5 steps in this guide:
       ![Pin git bash](images/pin-git-bash.png)
 
    4. Click the `git bash` icon in the Taskbar to run it
+
       1. Type the following text in the `git bash` window and then `<Enter>`
 
          ```text
          touch .bashrc
          ```
 
+         If you get **an error stating** that you don't have permissions to create the file, then it is likely `git bash` did not launch from the correct folder. Make sure you followed steps 2 and 3 above, if not seek support.
+
       2. Type `exit` then `<Enter>` to close this window
+
    5. Now click the `git bash` icon in the Taskbar to run it again
+
       1. This time you should see some messages like `missing setup message related to .bash_profile`
-      2. `git bash` is now set up and ready for the next steps
-   6. Exit the `git bash` window by typing `exit` and then `<Enter>`
-   7. Open a new `git bash` window by clicking on it's icon in the Windows Taskbar
+
+         ![Bash warnings](images/bashrc-warning.png)
+
+      2. The warning message tells us `git bash` is now set up properly and we are ready for the next steps.
+
+   6. Exit the `git bash` window by typing `exit` and then `<Enter>`.
+   7. Open a new `git bash` window by clicking on it's icon in the Windows Taskbar. This time, you should not see the warning above.
 
       1. At the `$` prompt in the new window, type `git --version` and then `<Enter>` to check `git` is correctly installed. You should see something like the following text displayed:
 
@@ -69,6 +78,13 @@ Now follow the instructions for setting up the extensions for VS Code.
 
 [Setup VSCode Extensions](vscode-setup-instructions.md)
 
+### 2.2 Set Default Terminal in VSCode to Bash
+
+1. Open VSCode
+2. Press `Ctrl+Shift+P` or `F1` which will open the command palette
+3. Type: `Terminal: Select Default Profile` (you don't need to type this fully) and press enter on this option or click on it.
+4. Select `Git Bash` as the default terminal (by pressing enter on that option or click on it).
+
 ## 4. Install NVM
 
 [NodeJS](https://nodejs.org/en/) is a runtime environment for JavaScript. It allows us to build and run javascript applications. We shall make extensive use of this throughout the course.
@@ -86,13 +102,15 @@ We will use a tool called `nvm` to install NodeJS - [Link to GitHub Repository](
 3. Once the above completes, close the current `git bash` window and open a new one before you continue.
 4. Install the latest version of NodeJS
 
-   `nvm install node`
+   `nvm install --lts`
+
+   **Note**: it might take a few seconds before any output starts to appear in the terminal.
 
 5. Restart terminal and run the final command.
 
-   `nvm use node`
+   `nvm use --lts`
 
-6. Confirm that you are using the latest version of Node and npm.
+6. Confirm that you are using the latest version of Node and npm. Version 16 is the latest stable. If you installed version 17 for Node, that is also OK. `npm` should be version 8+.
 
    `node -v && npm -v`
 
@@ -133,7 +151,7 @@ We will need SSH Keys in order to push our code to GitHub.
 
    Make sure you are in the `.ssh` folder. Run the command `pwd` in your Terminal and you should expect to see this output:
 
-   `/Users/YOUR_USERNAME/.ssh`
+   `/c/Users/<YOUR_USERNAME>/.ssh`
 
    Now we try to create an empty `config` file, if it doesn't exist already by running:
 
@@ -141,7 +159,7 @@ We will need SSH Keys in order to push our code to GitHub.
 
    Now run the command `code ./config` which will open the empty (or existing) `config` file directly in Visual Studio Code.
 
-   You now want to add the following configuration at the bottom of your `config` file and save:
+   You now want to add the following configuration at the bottom of your `config` file and **save**:
 
    ```
    Host github.com
@@ -176,6 +194,8 @@ Once you have generated SSH Keys on your machine, we need to add the public key 
 7. Choose a title and paste the key you copied earlier with `<Ctrl-C>` (see the screenshot below)
 
    ![Github SSH Key](images/github-add-ssh-key.png)
+
+   **NOTE**: make sure that when you paste, you are not pasting whitespace (new lines, spaces).
 
 8. Click `Add SSH Key`
 
