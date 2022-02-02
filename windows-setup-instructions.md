@@ -5,9 +5,10 @@ There are 5 steps in this guide:
 1. Install git & Git Bash
 2. Install Visual Studio Code
 
-   3.1 Install VSCode Extensions
+   2.1 Install VSCode Extensions
+   2.2 Set Default Terminal in VSCode to Bash
 
-3. Install NodeJS
+3. Install NVM and NodeJS
 4. Setup SSH Keys for GitHub
 
    4.1 Add SSH Keys to GitHub
@@ -85,7 +86,7 @@ Now follow the instructions for setting up the extensions for VS Code.
 3. Type: `Terminal: Select Default Profile` (you don't need to type this fully) and press enter on this option or click on it.
 4. Select `Git Bash` as the default terminal (by pressing enter on that option or click on it).
 
-## 4. Install NVM
+## 3. Install NVM and NodeJS
 
 [NodeJS](https://nodejs.org/en/) is a runtime environment for JavaScript. It allows us to build and run javascript applications. We shall make extensive use of this throughout the course.
 
