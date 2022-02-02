@@ -32,6 +32,11 @@ There are 5 steps in this guide:
 
    4. Click the `git bash` icon in the Taskbar to run it
       1. Type the following text in the `git bash` window and then `<Enter>`
+
+         ```text
+         touch .bashrc
+         ```
+
       2. Type `exit` then `<Enter>` to close this window
    5. Now click the `git bash` icon in the Taskbar to run it again
       1. This time you should see some messages like `missing setup message related to .bash_profile`
@@ -48,7 +53,7 @@ There are 5 steps in this guide:
       $
       ```
 
-      2. Finally type `exit` and then `<Enter>` to close the window.
+      1. Finally type `exit` and then `<Enter>` to close the window.
 
 ## 2. Install VSCode
 
