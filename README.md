@@ -1,14 +1,14 @@
 # Developer Environment Setup
 
-To be able to write and run code, we must install the right softwares on our machine. By following this guide you will have a computer that is ready for coding. Please follow the instructions that are specific to your operating system, where needed.
+To be able to write and run code, we must install the right software on our machine. By following this guide you will have a computer that is ready for coding. Please follow the instructions that are specific to your operating system.
 
 ## Objectives
 
 - Setup Terminal / Command prompt
-- Install git
-- Install VSCode
+- Install git and Git Bash
+- Install Visual Studio Code (VSCode)
   - Setup VSCode
-- Install node
+- Install NVM and NodeJS
 - Setup SSH keys for github
 
 ## Setup Guide
@@ -16,5 +16,3 @@ To be able to write and run code, we must install the right softwares on our mac
 [Windows Setup Instructions](windows-setup-instructions.md)
 
 [macOS Setup Instructions](macOS-setup-instructions.md)
-
-## Testing your setup

@@ -6,7 +6,7 @@ There are 5 steps in this guide:
 2. Install Visual Studio Code
 
    2.1 Install VSCode Extensions
-   2.2 Set Default Terminal in VSCode to Bash
+   2.2 Set Default Terminal in VSCode to Git Bash
 
 3. Install NVM and NodeJS
 4. Setup SSH Keys for GitHub
@@ -79,7 +79,7 @@ Now follow the instructions for setting up the extensions for VS Code.
 
 [Setup VSCode Extensions](vscode-setup-instructions.md)
 
-### 2.2 Set Default Terminal in VSCode to Bash
+### 2.2 Set Default Terminal in VSCode to Git Bash
 
 1. Open VSCode
 2. Press `Ctrl+Shift+P` or `F1` which will open the command palette
