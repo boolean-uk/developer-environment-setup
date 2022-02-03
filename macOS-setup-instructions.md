@@ -156,16 +156,17 @@ We are following the instructions [from this guide](https://www.taniarascia.com/
    ```
    If the above occurs, run the command `touch ~/.bashrc`, then repeat the `curl` command of step 1 to re-run the `nvm` installation.
    
+2. Quit the terminal completely and relaunch it.
    
-2. Install the latest version of NodeJS
+3. Install the latest version of NodeJS
 
    `nvm install --lts`
 
-3. Restart terminal and run the final command.
+4. Restart terminal and run the final command.
 
    `nvm use --lts`
 
-4. Confirm that you are using the latest version of Node and npm. Version 16 is the latest stable. If you installed version 17 for Node, that is also OK. `npm` should be version 8+.
+5. Confirm that you are using the latest version of Node and npm. Version 16 is the latest stable. If you installed version 17 for Node, that is also OK. `npm` should be version 8+.
 
    `node -v && npm -v`
 
