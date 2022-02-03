@@ -197,13 +197,19 @@ We will need SSH Keys in order to push our code to GitHub.
 
    `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
 
-   Once you press enter, you will be asked to choose a filename (you can go for `githubkeys`) and then a password. Make sure to note this down safely.
+   Once you press enter, you will be asked to choose a filename (you can go for `id_rsa`, the default) and then a password. Make sure to note this down safely, you will need it later.
 
    Once you have followed the instructions, you should see an output similar to this:
 
    ![SSH Keygen](images/macOS-ssh-keygen.png)
 
-5. Now we need to update the configuration for SSH so that it knows to use the newly created key when you attempt to authenticate with github. Make sure you are in
+5. Add the SSH key to your keychain
+
+   `ssh-add --apple-use-keychain ~/.ssh/[your-private-key]`
+   
+   If you used the default private key name, `id_rsa` then the command will be `ssh-add --apple-use-keychain ~/.ssh/id_rsa`
+
+6. Now we need to update the configuration for SSH so that it knows to use the newly created key when you attempt to authenticate with github. Make sure you are in
 
    Make sure you are in the `.ssh` folder. Run the command `pwd` in your Terminal and you should expect to see this output:
 
@@ -218,13 +224,13 @@ We will need SSH Keys in order to push our code to GitHub.
    You now want to add the following configuration at the bottom of your `config` file and save:
 
    ```
-   Host github.com
+   Host *
      AddKeysToAgent yes
      UseKeychain yes
-     IdentityFile ~/.ssh/githubkeys
+     IdentityFile ~/.ssh/[your-private-key]
    ```
 
-   **NOTE:** you will have to replace `~/.ssh/githubkeys` with the key filename that you chose in step 4.
+   **NOTE:** you will have to replace `~/.ssh/[your-private-key]` with the key filename that you chose in step 4, so if you used the default name, this will be `~/.ssh/id_rsa`
 
 ### 6.1. Adding SSH Keys onto Github account
 
