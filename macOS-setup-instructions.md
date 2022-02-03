@@ -69,7 +69,7 @@ On macOS, `git` is installed with the `Command Line Tools` package for `XCode`, 
 6. Open the terminal again
 7. Check that git is installed by typing the following command
 
-   `git -v`
+   `git --version`
 
    The above should produce something similar to:
 
