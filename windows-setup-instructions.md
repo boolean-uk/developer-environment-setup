@@ -209,3 +209,14 @@ In your terminal, run the following command:
 If everything is correctly setup, you should see the following message:
 
 `Hi <YOUR_GITHUB_USERNAME>! You've successfully authenticated, but GitHub does not provide shell access.`
+
+### 4.3 Add Your Identity Details For Git Operations
+
+Before you can use Git, you need to perform the following configuration steps from a `git bash` window - open by clicking on the icon in the Taskbar.
+
+```text
+git config --global user.email "your_email@address"
+git config --global user.name "Your Name"
+```
+
+This ensures any changes you make are tagged with you name. You will see this when you look at changes in GitHub, VSCode or using `git` commands.
