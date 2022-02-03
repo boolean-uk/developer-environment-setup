@@ -143,7 +143,9 @@ We will need SSH Keys in order to push our code to GitHub.
 
    `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
 
-   Once you press enter, you will be asked to choose a filename (you can go for `githubkeys`) and then a password. Make sure to note this down safely.
+   Once you press enter, you will be asked to choose a filename (you can go for `githubkeys`).
+
+   **NOTE** When asked for a passphrase and then again to confirm, please simply press enter to skip this step.
 
    Once you have followed the instructions, you should see an output similar to this:
 
