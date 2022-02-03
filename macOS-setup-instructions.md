@@ -273,6 +273,18 @@ If everything is correctly setup, you should see the following message:
 
 `Hi YOUR_GITHUB_USERNAME! You've successfully authenticated, but GitHub does not provide shell access.`
 
+### 6.3 Add Your Identity Details For Git Operations
+
+Before you can use Git, you need to paste the following commands into a git bash window - you can open one by clicking on the git bash icon in the Taskbar.
+
+```bash
+git config --global user.email "your_email@address"
+
+git config --global user.name "Your Name"
+```
+
+This ensures any changes you make are tagged with you name. You will see this when you look at changes in GitHub, VSCode or using git commands.
+
 ## 7. Change macOS Settings
 
 Some macOS settings will make it hard to develop.
