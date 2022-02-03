@@ -140,10 +140,23 @@ We are following the instructions [from this guide](https://www.taniarascia.com/
 
 1. Install NVM
 
-   `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh . bash`
+   `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash`
 
    If you get an error that `curl` is not installed, you can run `brew install curl`
-
+   
+   You might get a message telling you the installation could not complete because of a missing configuration file:
+   
+   ```bash
+   ... more output
+   => Profile not found. Tried ~/.bashrc, ~/.bash_profile, ~/.zshrc, and ~/.profile.
+   => Create one of them and run this script again
+   OR
+   => Append the following lines to the correct file yourself:
+   ... more output
+   ```
+   If the above occurs, run the command `touch ~/.bashrc`, then repeat the `curl` command of step 1 to re-run the `nvm` installation.
+   
+   
 2. Install the latest version of NodeJS
 
    `nvm install --lts`
