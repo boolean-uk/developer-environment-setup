@@ -1,6 +1,6 @@
 # Windows Setup Instructions
 
-There are 5 steps in this guide:
+There are 4 steps in this guide:
 
 1. Install git & Git Bash
 2. Install Visual Studio Code
@@ -13,6 +13,7 @@ There are 5 steps in this guide:
 
    4.1 Add SSH Keys to GitHub
    4.2 Check SSH & GitHub Setup
+   4.3 Add Your Identity Details for Git Operations
 
 ## 1. Install git & Git Bash
 
@@ -212,7 +213,7 @@ If everything is correctly setup, you should see the following message:
 
 ### 4.3 Add Your Identity Details For Git Operations
 
-Before you can use Git, you need to perform the following configuration steps from a `git bash` window - open by clicking on the icon in the Taskbar.
+Before you can use Git, you need to paste the following commands into a `git bash` window - you can open one by clicking on the `git bash` icon in the Taskbar.
 
 ```text
 git config --global user.email "your_email@address"
