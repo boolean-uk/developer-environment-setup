@@ -17,6 +17,8 @@ To be able to write and run code, we must install the right software on our mach
 
 [macOS Setup Instructions](macOS-setup-instructions.md)
 
-## Other Guides
+## Other Optional Guides
+
+The following guides are optional and you do not need to follow them to be fully set up. It might be useful to have a look once you are comfortable with your setup.
 
 [Useful bash aliases for Git and a few other things](git-aliases.md)
