@@ -16,3 +16,7 @@ To be able to write and run code, we must install the right software on our mach
 [Windows Setup Instructions](windows-setup-instructions.md)
 
 [macOS Setup Instructions](macOS-setup-instructions.md)
+
+## Other Guides
+
+[Useful bash aliases for Git and a few other things](git-aliases.md)
