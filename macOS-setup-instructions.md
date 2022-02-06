@@ -145,9 +145,9 @@ We are following the instructions [from this guide](https://www.taniarascia.com/
    `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash`
 
    If you get an error that `curl` is not installed, you can run `brew install curl`
-   
+
    You might get a message telling you the installation could not complete because of a missing configuration file:
-   
+
    ```bash
    ... more output
    => Profile not found. Tried ~/.bashrc, ~/.bash_profile, ~/.zshrc, and ~/.profile.
@@ -156,10 +156,10 @@ We are following the instructions [from this guide](https://www.taniarascia.com/
    => Append the following lines to the correct file yourself:
    ... more output
    ```
+
    If the above occurs, run the command `touch ~/.bashrc`, then repeat the `curl` command of step 1 to re-run the `nvm` installation.
-   
+
 2. Quit the terminal completely and relaunch it.
-   
 3. Install the latest version of NodeJS
 
    `nvm install --lts`
@@ -199,7 +199,7 @@ We will need SSH Keys in order to push our code to GitHub.
 
    `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
 
-   Once you press enter, you will be asked to choose a filename (you can go for `id_rsa`, the default) and then a password. Make sure to note this down safely, you will need it later.
+   Once you press enter, you will be asked to choose a filename (you can go for `githubkey`) and then a password. Make sure to note this down safely, you will need it later.
 
    Once you have followed the instructions, you should see an output similar to this:
 
@@ -208,8 +208,8 @@ We will need SSH Keys in order to push our code to GitHub.
 5. Add the SSH key to your keychain
 
    `ssh-add --apple-use-keychain ~/.ssh/[your-private-key]`
-   
-   If you used the default private key name, `id_rsa` then the command will be `ssh-add --apple-use-keychain ~/.ssh/id_rsa`
+
+   If you used the suggested private key name, `githubkey` then the command will be `ssh-add --apple-use-keychain ~/.ssh/githubkey`
 
 6. Now we need to update the configuration for SSH so that it knows to use the newly created key when you attempt to authenticate with github. Make sure you are in
 
@@ -232,7 +232,7 @@ We will need SSH Keys in order to push our code to GitHub.
      IdentityFile ~/.ssh/[your-private-key]
    ```
 
-   **NOTE:** you will have to replace `~/.ssh/[your-private-key]` with the key filename that you chose in step 4, so if you used the default name, this will be `~/.ssh/id_rsa`
+   **NOTE:** you will have to replace `~/.ssh/[your-private-key]` with the key filename that you chose in step 4, so if you used the suggested file name, `githubkey`, this will be `~/.ssh/githubkey`
 
 ### 6.1. Adding SSH Keys onto Github account
 
