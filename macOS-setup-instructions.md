@@ -94,6 +94,8 @@ Homebrew has the following [installation requirements](https://docs.brew.sh/Inst
 - A 64-bit Intel CPU or Apple Silicon CPU
 - Command Line Tools (CLT) for Xcode (from xcode-select --install or https://developer.apple.com/download/all/)
 
+> Note: If you have macports installed already, please contact the afternoon teachers for support, don't install brew as it might cause conflicts with macports.
+
 1. Launch the Terminal app
 2. Paste the following command in the terminal (`CMD+V` or right-click -> paste)
 
