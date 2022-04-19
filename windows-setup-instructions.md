@@ -130,6 +130,8 @@ We will need SSH Keys in order to push our code to GitHub.
 2. Run the following command (will create a hidden folder called `.ssh`, if it doesn't exist already)
 
    `mkdir .ssh`
+   
+   If you see an error `cannot create directory ".ssh": Permission Denied` then run the command: `cd` + press enter and then try the command above again.
 
 3. Run the following command to move into the newly created directory
 
