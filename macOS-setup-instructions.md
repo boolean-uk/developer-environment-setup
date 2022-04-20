@@ -277,7 +277,7 @@ If everything is correctly setup, you should see the following message:
 
 ### 6.3 Add Your Identity Details For Git Operations
 
-Before you can use Git, you need to paste the following commands into a git bash window - you can open one by clicking on the git bash icon in the Taskbar.
+Before you can use Git, you need to paste the following commands into a Terminal.app window.
 
 ```bash
 git config --global user.email "your_email@address"
