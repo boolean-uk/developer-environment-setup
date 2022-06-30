@@ -21,23 +21,23 @@ Please add the following extensions to your VSCode:
 
    ![Prettier](images/prettier-extension.png)
 
-2. HTMLHint
+2. ESLint
+
+   ![ESLint](images/eslint-extension.png)
+
+3. HTMLHint
 
    ![HTMLHint](images/htmlhint-extension.png)
 
-3. Live Server
+4. Live Server
 
    ![Live Server](images/liveserver-extension.png)
 
-4. Markdown Extensions
+5. Markdown Extensions
 
    Markdown All in One, Markdown PDF and markdownlint
 
    ![Markdown Extensions](images/markdown-extensions.png)
-
-5. Project Manager
-
-   ![Project Manager](images/projectmanager-extension.png)
 
 6. REST Client
 
