@@ -2,31 +2,36 @@
 
 ## 4. Setup SSH Keys for Github
 
-An SSH key is an access credential for the SSH (secure shell) network protocol. This authenticated and encrypted secure network protocol is used for remote communication between machines on an unsecured open network. SSH is used for remote file transfer, network management, and remote operating system access.
-
-We will need SSH Keys in order to push our code to GitHub.
+>An SSH key is an access credential for the SSH (secure shell) network protocol. This authenticated and encrypted secure network protocol is used for remote communication between machines on an unsecured open network. SSH is used for remote file transfer, network management, and remote operating system access.
 
 > GitHub have a [detailed guide for you to follow](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent), although we have summarised some of the key steps here.
 
-1. Click the `git bash` icon in the Taskbar to run it
-2. Run the following command (will create a hidden folder called `.ssh`, if it doesn't exist already)
+We will need SSH Keys in order to push our code to GitHub.
 
-   `mkdir .ssh`
+- [ ] Open `git bash` by clicking the `git bash` icon in the Taskbar to run it
+- [ ] Run the following command (will create a hidden folder called `.ssh`, if it doesn't exist already)
+
+   ```bash
+   mkdir .ssh
+   ```
    
    If you see an error `cannot create directory ".ssh": Permission Denied` then run the command: `cd` + press enter and then try the command above again.
 
-3. Run the following command to move into the newly created directory
+- [ ] Run the following command to move into the newly created directory
 
-   `cd .ssh`
+   ```bash
+   cd .ssh
+   ```
 
    Make sure you are in the `.ssh` folder. Run the command `pwd` and you should expect to see this output:
 
    `/c/Users/<YOUR_USERNAME>/.ssh`
 
-4. Now we run the following command to generate a new SSH key and save it to our machine. Make sure you replace *your_email@example.com* with your email - this is just a name for the key and it allows you to recognise it.
+- [ ] Now we run the following command to generate a new SSH key and save it to our machine. Make sure you replace *your_email@example.com* with your email - this is just a name for the key and it allows you to recognise it.
 
-   `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
-
+   ```bash
+   ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+   ```
    Once you press enter, you will be asked to choose a filename (you can go for `githubkeys`).
 
    **NOTE** When asked for a passphrase and then again to confirm, please simply press enter to skip this step.
@@ -35,15 +40,17 @@ We will need SSH Keys in order to push our code to GitHub.
 
    ![SSH Keygen](images/macOS-ssh-keygen.png)
 
-5. Now we need to update the configuration for SSH so that it knows to use the newly created key when you attempt to authenticate with github. Make sure you are in
+- [ ] Now we need to update the configuration for SSH so that it knows to use the newly created key when you attempt to authenticate with github. Make sure you are in
 
    Make sure you are in the `.ssh` folder. Run the command `pwd` in your Terminal and you should expect to see this output:
-
-   `/c/Users/<YOUR_USERNAME>/.ssh`
+   ```bash
+   /c/Users/<YOUR_USERNAME>/.ssh
+   ```
 
    Now we try to create an empty `config` file, if it doesn't exist already by running:
-
-   `touch config`
+   ```bash
+   touch config
+   ```
 
    Now run the command `code ./config` which will open the empty (or existing) `config` file directly in Visual Studio Code.
 
@@ -65,7 +72,9 @@ Once you have generated SSH Keys on your machine, we need to add the public key 
 1. Click on the `git bash` icon in the Taskbar to run it.
 2. Open the public SSH key file that you created earlier by running
 
-   `code ~/.ssh/YOUR_GITHUB_SSH_KEY.pub`
+   ```bash
+   code ~/.ssh/YOUR_GITHUB_SSH_KEY.pub
+   ```
 
    Replace `YOUR_GITUBH_SSH_KEY` with the filename of the SSH key that you generated earlier.
 
@@ -90,8 +99,9 @@ Once you have generated SSH Keys on your machine, we need to add the public key 
 ### 4.2 Check that SSH & Github are setup correctly
 
 In your terminal, run the following command:
-
-`ssh -T git@github.com`
+```bash
+ssh -T git@github.com
+```
 
 If everything is correctly setup, you should see the following message:
 

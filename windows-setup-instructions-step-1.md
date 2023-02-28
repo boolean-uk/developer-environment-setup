@@ -1,28 +1,15 @@
 # Windows Setup Instructions
-
-There are 4 steps in this guide:
-
-1. Install git & Git Bash
-2. Install Visual Studio Code
-
-   2.1 Install VSCode Extensions
-   2.2 Set Default Terminal in VSCode to Git Bash
-
-3. Install NVM and NodeJS
-4. Setup SSH Keys for GitHub
-
-   4.1 Add SSH Keys to GitHub
-   4.2 Check SSH & GitHub Setup
-   4.3 Add Your Identity Details for Git Operations
-
-## 1. Install git & Git Bash
+## Install git & Git Bash
 ---
 > `git` is a program that allows developers to create snapshots of their code (backups) so that it is very easy to go back to a previous version in case we make some big mistakes in our code, or collaborate with other developers, when we end up writing code in the same files.
 
-1. Browse to the [Git Download for Windows page](https://git-scm.com/download/win) and select the `Standalone Installer (64-bit Git)` download - unless you have a `32-bit version of Windows`.
+### Git Download
+- [ ] Browse to the [Git Download for Windows page](https://git-scm.com/download/win) and select the `Standalone Installer (64-bit Git)` download - unless you have a `32-bit version of Windows`.
 
-2. Once the download is complete, run it from your browser's download bar.
+- [ ] Once the download is complete, run it from your browser's download bar.
 
+### Git Install
+This section will guide you on how to install git on your computer and 
    1. **Select defaults for all options during the installation**.
 
    2. When the installation is complete, press the `<Windows>` key and type `git` into the search box to find the `git bash` app
@@ -34,18 +21,19 @@ There are 4 steps in this guide:
       ![Pin git bash](images/pin-git-bash.png)
 
    4. Click the `git bash` icon in the Taskbar to run it
+### Open git Bash
 
-      1. Type the following text in the `git bash` window and then `<Enter>`
+   1. Type the following text in the `git bash` window and then `<Enter>`
 
-         ```bash
-         touch .bashrc
-         ```
+      ```bash
+      touch .bashrc
+      ```
 
-         >If you get **an error stating** that you don't have permissions to create the file, then it is likely `git bash` did not launch from the correct folder. Make sure you followed steps 2 and 3 above, if not seek support.
+      >If you get **an error stating** that you don't have permissions to create the file, then it is likely `git bash` did not launch from the correct folder. Make sure you followed steps 2 and 3 above, if not seek support.
 
-      2. Type `exit` then `<Enter>` to close this window
+   2. Type `exit` then `<Enter>` to close this window
 
-   5. Now click the `git bash` icon in the Taskbar to run it again
+   3. Now click the `git bash` icon in the Taskbar to run it again
 
       1. This time you should see some messages like `missing setup message related to .bash_profile`
 
@@ -53,8 +41,8 @@ There are 4 steps in this guide:
 
       2. The warning message tells us `git bash` is now set up properly and we are ready for the next steps.
 
-   5. Exit the `git bash` window by typing `exit` and then `<Enter>`.
-   6. Open a new `git bash` window by clicking on it's icon in the Windows Taskbar. This time, you should not see the warning above.
+   4. Exit the `git bash` window by typing `exit` and then `<Enter>`.
+   5. Open a new `git bash` window by clicking on it's icon in the Windows Taskbar. This time, you should not see the warning above.
 
       1. At the `$` prompt in the new window, type `git --version` and then `<Enter>` to check `git` is correctly installed. You should see something like the following text displayed:
 
@@ -64,6 +52,7 @@ There are 4 steps in this guide:
          user@PC-NAME MINGW ~
          $
          ```
+         >If you get a message saying git not found you probably did not complete the git installations step above
 
       2. Finally type `exit` and then `<Enter>` to close the window.
 
