@@ -1,123 +1,5 @@
 # Windows Setup Instructions
 
-There are 4 steps in this guide:
-
-1. Install git & Git Bash
-2. Install Visual Studio Code
-
-   2.1 Install VSCode Extensions
-   2.2 Set Default Terminal in VSCode to Git Bash
-
-3. Install NVM and NodeJS
-4. Setup SSH Keys for GitHub
-
-   4.1 Add SSH Keys to GitHub
-   4.2 Check SSH & GitHub Setup
-   4.3 Add Your Identity Details for Git Operations
-
-## 1. Install git & Git Bash
-
-`git` is a program that allows developers to create snapshots of their code (backups) so that it is very easy to go back to a previous version in case we make some big mistakes in our code, or collaborate with other developers, when we end up writing code in the same files.
-
-1. Browse to the [Git Download for Windows page](https://git-scm.com/download/win) and select the `Standalone Installer (64-bit Git)` download - unless you have a `32-bit version of Windows`.
-2. Once the download is complete, run it from your browser's download bar.
-
-   1. **Select defaults for all options during the installation**.
-
-   2. When the installation is complete, press the `<Windows>` key and type `git` into the search box to find the `git bash` app
-
-      ![Find git bash](images/find-git-bash.png)
-
-   3. Right click on the `git bash` app and click `Pin to taskbar` so you can start it quickly from the Taskbar.
-
-      ![Pin git bash](images/pin-git-bash.png)
-
-   4. Click the `git bash` icon in the Taskbar to run it
-
-      1. Type the following text in the `git bash` window and then `<Enter>`
-
-         ```text
-         touch .bashrc
-         ```
-
-         If you get **an error stating** that you don't have permissions to create the file, then it is likely `git bash` did not launch from the correct folder. Make sure you followed steps 2 and 3 above, if not seek support.
-
-      2. Type `exit` then `<Enter>` to close this window
-
-   5. Now click the `git bash` icon in the Taskbar to run it again
-
-      1. This time you should see some messages like `missing setup message related to .bash_profile`
-
-         ![Bash warnings](images/bashrc-warning.png)
-
-      2. The warning message tells us `git bash` is now set up properly and we are ready for the next steps.
-
-   6. Exit the `git bash` window by typing `exit` and then `<Enter>`.
-   7. Open a new `git bash` window by clicking on it's icon in the Windows Taskbar. This time, you should not see the warning above.
-
-      1. At the `$` prompt in the new window, type `git --version` and then `<Enter>` to check `git` is correctly installed. You should see something like the following text displayed:
-
-         ```text
-         git version 2.35.1.windows.1
-
-         user@PC-NAME MINGW ~
-         $
-         ```
-
-      2. Finally type `exit` and then `<Enter>` to close the window.
-
-## 2. Install VSCode
-
-[Visual Studio Code](https://code.visualstudio.com) is a code editor. It allows us to manage the files in a project and to edit the code that we write. It comes with a large number of very useful features that make development faster and easier. We can also improve its functionality by installing many extensions.
-
-1. Visit [VSCode's download page](https://code.visualstudio.com/download) and select the `User Installer 64 bit` download - unless you have a `32 bit version of Windows`.
-2. Once the download is complete, run it from your browser's download bar.
-3. Launch VSCode and make sure to pin the software to the Taskbar for future access.
-
-### 2.1 Install VSCode Extensions
-
-Now follow the instructions for setting up the extensions for VS Code.
-
-[Setup VSCode Extensions](vscode-setup-instructions.md)
-
-### 2.2 Set Default Terminal in VSCode to Git Bash
-
-1. Open VSCode
-2. Press `Ctrl+Shift+P` or `F1` which will open the command palette
-3. Type: `Terminal: Select Default Profile` (you don't need to type this fully) and press enter on this option or click on it.
-4. Select `Git Bash` as the default terminal (by pressing enter on that option or click on it).
-
-## 3. Install NVM and NodeJS
-
-[NodeJS](https://nodejs.org/en/) is a runtime environment for JavaScript. It allows us to build and run javascript applications. We shall make extensive use of this throughout the course.
-
-We will use a tool called `nvm` to install NodeJS - [Link to GitHub Repository](https://github.com/nvm-sh/nvm)
-
-1. Open a new `git bash` window by clicking it's icon in the Windows Taskbar - set up in step 1 above.
-2. Paste the following command into the `git bash` window
-
-   ```text
-   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
-
-   ```
-
-3. Once the above completes, close the current `git bash` window and open a new one before you continue.
-4. Install the latest version of NodeJS
-
-   `nvm install --lts`
-
-   **Note**: it might take a few seconds before any output starts to appear in the terminal.
-
-5. Restart terminal and run the final command.
-
-   `nvm use --lts`
-
-6. Confirm that you are using the latest version of Node and npm. Version 16 is the latest stable. If you installed version 17 for Node, that is also OK. `npm` should be version 8+.
-
-   `node -v && npm -v`
-
-Further reading on nvm: [https://github.com/nvm-sh/nvm](https://github.com/nvm-sh/nvm)
-
 ## 4. Setup SSH Keys for Github
 
 An SSH key is an access credential for the SSH (secure shell) network protocol. This authenticated and encrypted secure network protocol is used for remote communication between machines on an unsecured open network. SSH is used for remote file transfer, network management, and remote operating system access.
@@ -225,3 +107,7 @@ git config --global user.name "Your Name"
 ```
 
 This ensures any changes you make are tagged with you name. You will see this when you look at changes in GitHub, VSCode or using `git` commands.
+
+| Previous | Next |
+| ----- | ---------- |
+| [Step 3 Install Install NVM and NodeJS](windows-setup-instructions-step-3) | Congratulations! You are done! |
