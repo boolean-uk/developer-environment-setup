@@ -45,17 +45,22 @@ This section will guide you on how to install git on your computer and
    - [ ] Exit the `git bash` window by typing `exit` and then `<Enter>`.
    - [ ] Open a new `git bash` window by clicking on it's icon in the Windows Taskbar. This time, you should not see the warning above.
 
-      1. At the `$` prompt in the new window, type `git --version` and then `<Enter>` to check `git` is correctly installed. You should see something like the following text displayed:
+   - [ ] At the `$` prompt in the new window, type 
+      ```bash
+      git --version
+      ```
 
-         ```text
-         git version 2.35.1.windows.1
+      and then press `<Enter>` to check `git` is correctly installed. You should see something like the following text displayed:
 
-         user@PC-NAME MINGW ~
-         $
-         ```
+      ```text
+      git version 2.35.1.windows.1
+
+      user@PC-NAME MINGW ~
+      $
+      ```
          >If you get a message saying git not found you probably did not complete the git installations step above
 
-      2. Finally type `exit` and then `<Enter>` to close the window.
+      3. Finally type `exit` and then `<Enter>` to close the window.
 
 | Previous | Next |
 | ----- | ---------- |
