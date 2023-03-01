@@ -1,7 +1,7 @@
 # Table of Contents
 | Windows                                                                               |
 | ------------------------------------------------------------------------------------- |
-| [Windows Setup Instructions](windows/1-windows-setup-instructions-git-install.md)     |
+| [Windows Setup Instructions](1-windows-setup-instructions-git-install.md)     |
 | [Step 2 Install VSCode](2-windows-setup-instructions-vscode-install.md)               |
 | [Step 3 Install Install NVM and NodeJS](3-windows-setup-instructions-node-install.md) |
 | [Step 4 Setup SSH Keys for Github](4-windows-setup-instructions-setup-ssh.md)         |

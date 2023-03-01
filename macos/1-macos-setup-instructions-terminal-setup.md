@@ -1,7 +1,7 @@
 # Table of Contents
 | MacOS |
 | ---------- |
-| [macOS Setup Instructions](macos/1-macos-setup-instructions-terminal-setup.md) |
+| [macOS Setup Instructions](1-macos-setup-instructions-terminal-setup.md) |
 | [Step 2 Install Git](2-macos-setup-instructions-install-git.md) |
 | [Step 3 Install Homebrew](3-macos-setup-instructions-homebrew.md) |
 | [Step 4 Install VS Code](4-macos-setup-instructions-vscode-install.md) |
