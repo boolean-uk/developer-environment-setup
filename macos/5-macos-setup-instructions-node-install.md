@@ -1,4 +1,4 @@
-# 5. Install NodeJS
+# Install NodeJS
 
 >[NodeJS](https://nodejs.org/en/) is a runtime environment for JavaScript. It allows us to build and run javascript applications. We shall make extensive use of this throughout the course.
 
@@ -34,14 +34,70 @@ We are following the instructions [from this guide](https://www.taniarascia.com/
    ``` 
    then repeat the `curl` command of step 1 to re-run the `nvm` installation.
 
+   
+
 - [ ] Quit the terminal completely and relaunch it.
+- [ ] Type `nvm -v` in the terminal. You should see an output with some version ex. `1.1.10`
+- [ ] If the above does not work go to Troubleshoot guide, else if it displays a version go to next section
+### Troubleshoot if nvm does not work
+
+> **IMPORTANT NOTE** If the above command returns an output saying `command not found: nvm`
+> In this case we need to define if our terminal is using `bash` or `zsh`.
+
+Type in the terminal
+
+```bash
+which $SHELL
+```
+
+There are 2 possible outcomes from the above command
+
+bash:
+
+```text
+   /usr/bin/bash
+```
+
+zsh:
+
+```text
+   /bin/zsh
+```
+
+Open the file based on the terminal that you have based on the above output
+
+bash:
+
+```bash
+   touch ~/.bashrc
+```
+
+```bash
+   code ~/.bashrc
+```
+
+zsh:
+
+```bash
+   touch ~/.zshrc
+```
+
+```bash
+   code ~/.zshrc
+```
+Add the following code in the end of that file, without touching anything else in there
+```text
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+```
+
 ---
 ## Install the latest version of NodeJS
 
    ```bash
    nvm install --lts
    ```
-
+---
 - [ ] Restart terminal and run the final command.
 
    ```bash

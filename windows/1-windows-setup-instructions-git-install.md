@@ -56,7 +56,7 @@ This section will guide you on how to install git on your computer and
          >If you get a message saying git not found you probably did not complete the git installations step above
 
       2. Finally type `exit` and then `<Enter>` to close the window.
----
+
 | Previous | Next |
 | ----- | ---------- |
-| - | [Step 2 Install VSCode](windows-setup-instructions-vscode-install) |
+| - | [Step 2 Install VSCode](2-windows-setup-instructions-vscode-install) |

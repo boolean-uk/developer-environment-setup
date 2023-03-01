@@ -24,6 +24,7 @@ We will use a tool called `nvm` to install NodeJS - [Link to GitHub Repository](
 
    **Note**: it might take a few seconds before any output starts to appear in the terminal.
 
+
 - [ ] Restart terminal and run the final command.
    ```js
    nvm use --lts
@@ -38,4 +39,4 @@ We will use a tool called `nvm` to install NodeJS - [Link to GitHub Repository](
 ---
 | Previous | Next |
 | ----- | ---------- |
-| [Step 2 Install git & Git Bash](windows-setup-instructions-vscode-install) | [Step 4 Setup SSH Keys for Github](windows-setup-instructions-setup-ssh)
+| [Step 2 Install git & Git Bash](2-windows-setup-instructions-vscode-install) | [Step 4 Setup SSH Keys for Github](4-windows-setup-instructions-setup-ssh)

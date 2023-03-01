@@ -13,7 +13,7 @@ On macOS we can launch the terminal in the following ways.
 
 ![Launch Terminal.app](../images/macOSTerminalLaunchSpotlight.png)
 
-_Note_ - in your Spotligh Search, `Terminal.app` might just be called `Terminal` without the `.app` at the end. It corresponds to the same program.
+> _Note_ - in your Spotligh Search, `Terminal.app` might just be called `Terminal` without the `.app` at the end. It corresponds to the same program.
 
 **Option 2:** from Launchpad
 
