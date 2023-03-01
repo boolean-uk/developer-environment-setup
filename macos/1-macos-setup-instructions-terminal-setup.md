@@ -34,4 +34,4 @@ On macOS we can launch the terminal in the following ways.
 ---
 | Previous | Next |
 | ----- | ---------- |
-| - | [Step 2 Install Git](2-macos-setup-instructions-install-git) |
+| - | [Step 2 Install Git](2-macos-setup-instructions-install-git.md) |
