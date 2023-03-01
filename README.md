@@ -13,7 +13,7 @@ To be able to write and run code, we must install the right software on our mach
 
 ## Setup Guide
 
-[Windows Setup Instructions](windows-setup-instructions-step-1.md)
+[Windows Setup Instructions](windows/windows-setup-instructions-step-1.md)
 
 [macOS Setup Instructions](macOS-setup-instructions.md)
 
