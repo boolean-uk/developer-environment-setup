@@ -15,7 +15,7 @@ To be able to write and run code, we must install the right software on our mach
 
 [Windows Setup Instructions](windows/windows-setup-instructions-step-1.md)
 
-[macOS Setup Instructions](macOS-setup-instructions.md)
+[macOS Setup Instructions](macos/1-macos-setup-instructions-terminal-setup.md)
 
 ## Other Optional Guides
 
