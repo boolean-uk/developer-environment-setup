@@ -59,4 +59,4 @@ This section will guide you on how to install git on your computer and
 
 | Previous | Next |
 | ----- | ---------- |
-| - | [Step 2 Install VSCode](2-windows-setup-instructions-vscode-install) |
+| - | [Step 2 Install VSCode](2-windows-setup-instructions-vscode-install.md) |

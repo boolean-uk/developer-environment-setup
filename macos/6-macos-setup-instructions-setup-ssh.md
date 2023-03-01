@@ -134,4 +134,4 @@ This ensures any changes you make are tagged with you name. You will see this wh
 ---
 | Previous | Next |
 | ----- | ---------- |
-| [Step 5 Install Install NVM and NodeJS](5-macos-setup-instructions-node-install) | [Step 7 Change macOS Settings](7-macos-setup-instructions-change-settings)
+| [Step 5 Install Install NVM and NodeJS](5-macos-setup-instructions-node-install.md) | [Step 7 Change macOS Settings](7-macos-setup-instructions-change-settings.md)

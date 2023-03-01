@@ -34,4 +34,4 @@ Homebrew has the following [installation requirements](https://docs.brew.sh/Inst
 ---
 | Previous | Next |
 | ----- | ---------- |
-| [Step 2 Install Git](2-macos-setup-instructions-install-git) | [Step 4 Install VS Code](4-macos-setup-instructions-vscode-install) |
+| [Step 2 Install Git](2-macos-setup-instructions-install-git.md) | [Step 4 Install VS Code](4-macos-setup-instructions-vscode-install.md) |

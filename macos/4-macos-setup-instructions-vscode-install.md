@@ -23,8 +23,8 @@
 
 Now follow the instructions for setting up the extensions for VS Code.
 
-[Setup VSCode Extensions](../vscode-setup-instructions.md)
+- [ ] [Setup VSCode Extensions](../vscode-setup-instructions.md)
 ---
 | Previous | Next |
 | ----- | ---------- |
-| [Step 3 Install Homebrew](3-macos-setup-instructions-homebrew) | [Step 5 Install Install NVM and NodeJS](5-macos-setup-instructions-node-install) |
+| [Step 3 Install Homebrew](3-macos-setup-instructions-homebrew.md) | [Step 5 Install Install NVM and NodeJS](5-macos-setup-instructions-node-install.md) |

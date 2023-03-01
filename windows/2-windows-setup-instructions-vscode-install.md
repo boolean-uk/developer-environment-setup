@@ -22,4 +22,4 @@ Now follow the instructions for setting up the extensions for VS Code.
 ---
 | Previous | Next |
 | ----- | ---------- |
-| [Step 1 Install git & Git Bash](1-windows-setup-instructions-git-install) | [Step 3 Install Install NVM and NodeJS](3-windows-setup-instructions-node-install) |
+| [Step 1 Install git & Git Bash](1-windows-setup-instructions-git-install.md) | [Step 3 Install Install NVM and NodeJS](3-windows-setup-instructions-node-install.md) |

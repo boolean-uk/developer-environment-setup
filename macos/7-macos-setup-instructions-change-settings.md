@@ -17,4 +17,4 @@ You may wish to have a [look at this guide](https://www.taniarascia.com/setting-
 
 | Previous | Next |
 | ----- | ---------- |
-| [Step 6 Setup SSH Keys for Github](6-macos-setup-instructions-setup-ssh) | Congratulations! You are done! |
+| [Step 6 Setup SSH Keys for Github](6-macos-setup-instructions-setup-ssh.md) | Congratulations! You are done! |

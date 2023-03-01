@@ -115,4 +115,4 @@ Further reading on nvm: [https://github.com/nvm-sh/nvm](https://github.com/nvm-s
 ---
 | Previous | Next |
 | ----- | ---------- |
-| [Step 4 Install VS Code](4-macos-setup-instructions-vscode-install) | [Step 6 Setup SSH Keys for Github](6-macos-setup-instructions-setup-ssh) |
+| [Step 4 Install VS Code](4-macos-setup-instructions-vscode-install.md) | [Step 6 Setup SSH Keys for Github](6-macos-setup-instructions-setup-ssh.md) |

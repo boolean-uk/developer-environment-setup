@@ -33,4 +33,4 @@ On macOS, `git` is installed with the `Command Line Tools` package for `XCode`, 
 ---
 | Previous | Next |
 | ----- | ---------- |
-| [Step 1 Terminal Setup](1-macos-setup-instructions-terminal-setup) | [Step 3 Install Homebrew](3-macos-setup-instructions-homebrew) |
+| [Step 1 Terminal Setup](1-macos-setup-instructions-terminal-setup.md) | [Step 3 Install Homebrew](3-macos-setup-instructions-homebrew.md) |
