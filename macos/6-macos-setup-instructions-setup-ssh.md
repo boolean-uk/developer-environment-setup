@@ -44,6 +44,10 @@ We will need SSH Keys in order to push our code to GitHub.
    ```
    > **NOTE:** Replace the [your-private-key] including the square brackets []
 
+   >**IMPORTANT NOTE** If above command throws an error saying `illegal option --` then do the following command, remembering to substitute the `[your-private-key]` with the file name
+      ```bash
+      ssh-add -K ~/.ssh/[your-private-key]
+      ```
    If you used the suggested private key name, `githubkey` then the command will be 
    ```bash
    ssh-add --apple-use-keychain ~/.ssh/githubkey
@@ -131,6 +135,11 @@ git config --global user.name "Your Name"
 > **NOTE:** You will need to keep the quotes in the above command line and enter your email between the quotes
 
 This ensures any changes you make are tagged with you name. You will see this when you look at changes in GitHub, VSCode or using git commands.
+
+---
+
+[Return to the table of comments at the top of this page](#table-of-contents)
+
 ---
 | Previous | Next |
 | ----- | ---------- |

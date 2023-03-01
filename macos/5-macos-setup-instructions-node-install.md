@@ -113,6 +113,10 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 Further reading on nvm: [https://github.com/nvm-sh/nvm](https://github.com/nvm-sh/nvm)
 
 ---
+
+[Return to the table of comments at the top of this page](#table-of-contents)
+
+---
 | Previous | Next |
 | ----- | ---------- |
 | [Step 4 Install VS Code](4-macos-setup-instructions-vscode-install.md) | [Step 6 Setup SSH Keys for Github](6-macos-setup-instructions-setup-ssh.md) |

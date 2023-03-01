@@ -42,6 +42,10 @@ On macOS we can launch the terminal in the following ways.
 ![Pin to Launchbar](../images/macOSTerminalPinToToolbar.png)
 
 ---
+
+[Return to the table of comments at the top of this page](#table-of-contents)
+
+---
 | Previous | Next |
 | ----- | ---------- |
 | - | [Step 2 Install Git](2-macos-setup-instructions-install-git.md) |

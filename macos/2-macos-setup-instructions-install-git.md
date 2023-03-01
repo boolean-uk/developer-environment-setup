@@ -29,6 +29,10 @@ On macOS, `git` is installed with the `Command Line Tools` package for `XCode`, 
    > git --version
    git version 2.24.3 (Apple Git-128)
    ```
+   
+---
+
+[Return to the table of comments at the top of this page](#table-of-contents)
 
 ---
 | Previous | Next |

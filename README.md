@@ -21,7 +21,6 @@ To be able to write and run code, we must install the right software on our mach
 |  | [Step 5 Install Install NVM and NodeJS](macos/5-macos-setup-instructions-node-install.md) |
 |  | [Step 6 Setup SSH Keys for Github](macos/6-macos-setup-instructions-setup-ssh.md) |
 |  | [Step 7 Change macOS Settings](macos/7-macos-setup-instructions-change-settings.md) |
-|  |  |
 
 
 

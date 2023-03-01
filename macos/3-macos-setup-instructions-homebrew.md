@@ -30,6 +30,9 @@ Homebrew has the following [installation requirements](https://docs.brew.sh/Inst
 
 5. You're good to go!
 
+---
+
+[Return to the table of comments at the top of this page](#table-of-contents)
 
 ---
 | Previous | Next |

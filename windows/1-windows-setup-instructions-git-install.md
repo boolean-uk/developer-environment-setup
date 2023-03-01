@@ -69,6 +69,11 @@ This section will guide you on how to install git on your computer and
 
       3. Finally type `exit` and then `<Enter>` to close the window.
 
+---
+
+[Return to the table of comments at the top of this page](#table-of-contents)
+
+---
 | Previous | Next |
 | ----- | ---------- |
 | - | [Step 2 Install VSCode](2-windows-setup-instructions-vscode-install.md) |

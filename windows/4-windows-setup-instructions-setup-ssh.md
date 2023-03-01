@@ -116,6 +116,11 @@ git config --global user.name "Your Name"
 
 This ensures any changes you make are tagged with you name. You will see this when you look at changes in GitHub, VSCode or using `git` commands.
 
+---
+
+[Return to the table of comments at the top of this page](#table-of-contents)
+
+---
 | Previous | Next |
 | ----- | ---------- |
 | [Step 3 Install Install NVM and NodeJS](3-windows-setup-instructions-node-install.md) | Congratulations! You are done! |

@@ -15,6 +15,11 @@ In `System Preferences`, navigate to `Security & Privacy` and then to the `Gener
 
 You may wish to have a [look at this guide](https://www.taniarascia.com/setting-up-a-brand-new-mac-for-development/), towards the end there are some other recommended settings and options that you can implement.
 
+---
+
+[Return to the table of comments at the top of this page](#table-of-contents)
+
+---
 | Previous | Next |
 | ----- | ---------- |
 | [Step 6 Setup SSH Keys for Github](6-macos-setup-instructions-setup-ssh.md) | Congratulations! You are done! |

@@ -36,6 +36,11 @@ We will use a tool called `nvm` to install NodeJS - [Link to GitHub Repository](
    ```
 
 > Further reading on nvm: [https://github.com/nvm-sh/nvm](https://github.com/nvm-sh/nvm)
+
+---
+
+[Return to the table of comments at the top of this page](#table-of-contents)
+
 ---
 | Previous | Next |
 | ----- | ---------- |

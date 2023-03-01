@@ -24,6 +24,11 @@
 Now follow the instructions for setting up the extensions for VS Code.
 
 - [ ] [Setup VSCode Extensions](../vscode-setup-instructions.md)
+  
+---
+
+[Return to the table of comments at the top of this page](#table-of-contents)
+
 ---
 | Previous | Next |
 | ----- | ---------- |

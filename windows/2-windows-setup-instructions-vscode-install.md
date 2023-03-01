@@ -19,6 +19,11 @@ Now follow the instructions for setting up the extensions for VS Code.
 - [ ] Press `Ctrl+Shift+P` or `F1` which will open the command palette
 - [ ] Type: `Terminal: Select Default Profile` (you don't need to type this fully) and press enter on this option or click on it.
 - [ ] Select `Git Bash` as the default terminal (by pressing enter on that option or click on it).
+
+---
+
+[Return to the table of comments at the top of this page](#table-of-contents)
+
 ---
 | Previous | Next |
 | ----- | ---------- |
