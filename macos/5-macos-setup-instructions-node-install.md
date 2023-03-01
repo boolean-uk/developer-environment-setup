@@ -114,7 +114,7 @@ Further reading on nvm: [https://github.com/nvm-sh/nvm](https://github.com/nvm-s
 
 ---
 
-[Return to the table of comments at the top of this page](#table-of-contents)
+[Return to the table of comments at the top of the first page](1-macos-setup-instructions-terminal-setup.md#table-of-contents)
 
 ---
 | Previous | Next |

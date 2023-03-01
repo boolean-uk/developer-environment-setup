@@ -32,7 +32,7 @@ On macOS, `git` is installed with the `Command Line Tools` package for `XCode`, 
    
 ---
 
-[Return to the table of comments at the top of this page](#table-of-contents)
+[Return to the table of comments at the top of the first page](1-macos-setup-instructions-terminal-setup.md#table-of-contents)
 
 ---
 | Previous | Next |

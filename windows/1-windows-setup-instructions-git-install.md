@@ -67,7 +67,7 @@ This section will guide you on how to install git on your computer and
       ```
          >If you get a message saying git not found you probably did not complete the git installations step above
 
-      3. Finally type `exit` and then `<Enter>` to close the window.
+   - [ ] Finally type `exit` and then `<Enter>` to close the window.
 
 ---
 

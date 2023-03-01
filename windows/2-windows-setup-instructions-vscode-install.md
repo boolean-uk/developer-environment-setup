@@ -22,7 +22,7 @@ Now follow the instructions for setting up the extensions for VS Code.
 
 ---
 
-[Return to the table of comments at the top of this page](#table-of-contents)
+[Return to the table of comments at the top of the first page](1-windows-setup-instructions-git-install.md#table-of-contents)
 
 ---
 | Previous | Next |
