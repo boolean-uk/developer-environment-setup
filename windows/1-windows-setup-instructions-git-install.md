@@ -1,3 +1,10 @@
+# Table of Contents
+| Windows                                                                               |
+| ------------------------------------------------------------------------------------- |
+| [Windows Setup Instructions](windows/1-windows-setup-instructions-git-install.md)     |
+| [Step 2 Install VSCode](2-windows-setup-instructions-vscode-install.md)               |
+| [Step 3 Install Install NVM and NodeJS](3-windows-setup-instructions-node-install.md) |
+| [Step 4 Setup SSH Keys for Github](4-windows-setup-instructions-setup-ssh.md)         |
 # Install git and Git Bash
 ---
 > `git` is a program that allows developers to create snapshots of their code (backups) so that it is very easy to go back to a previous version in case we make some big mistakes in our code, or collaborate with other developers, when we end up writing code in the same files.

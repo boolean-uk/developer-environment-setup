@@ -118,4 +118,4 @@ This ensures any changes you make are tagged with you name. You will see this wh
 
 | Previous | Next |
 | ----- | ---------- |
-| [Step 3 Install Install NVM and NodeJS](windows-setup-instructions-node-install.md) | Congratulations! You are done! |
+| [Step 3 Install Install NVM and NodeJS](3-windows-setup-instructions-node-install.md) | Congratulations! You are done! |

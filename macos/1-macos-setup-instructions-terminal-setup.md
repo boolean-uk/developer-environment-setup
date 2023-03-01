@@ -1,3 +1,13 @@
+# Table of Contents
+| MacOS |
+| ---------- |
+| [macOS Setup Instructions](macos/1-macos-setup-instructions-terminal-setup.md) |
+| [Step 2 Install Git](2-macos-setup-instructions-install-git.md) |
+| [Step 3 Install Homebrew](3-macos-setup-instructions-homebrew.md) |
+| [Step 4 Install VS Code](4-macos-setup-instructions-vscode-install.md) |
+| [Step 5 Install Install NVM and NodeJS](5-macos-setup-instructions-node-install.md) |
+| [Step 6 Setup SSH Keys for Github](6-macos-setup-instructions-setup-ssh.md) |
+| [Step 7 Change macOS Settings](7-macos-setup-instructions-change-settings.md) |
 # Setting up Terminal.app
 
 >The Terminal is a program that developers use to run commands that tell the operating system (or another program), to perform specific tasks.
