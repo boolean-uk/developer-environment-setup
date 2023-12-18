@@ -36,6 +36,7 @@ This section will guide you on how to install git on your computer and
    - [ ] Click the `git bash` icon in the Taskbar to run it
 
 ---
+
 ## Open git Bash
 
    - [ ] Type the following text in the `git bash` window and then `<Enter>`
