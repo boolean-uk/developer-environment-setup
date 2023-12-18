@@ -73,7 +73,7 @@ This section will guide you on how to install git on your computer and
       user@PC-NAME MINGW ~
       $
       ```
-         >If you get a message saying git not found you probably did not complete the git installations step above
+   - If you get a message saying git not found you probably did not complete all of the git installation steps above
 
    - [ ] Finally type `exit` and then `<Enter>` to close the window.
 
