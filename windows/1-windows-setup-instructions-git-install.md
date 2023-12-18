@@ -16,7 +16,14 @@
 
 ### Git Install
 This section will guide you on how to install git on your computer and 
-   - [ ] **Select defaults for all options during the installation**.
+   - [ ] Leave the defaults selected for all options during the installation **except for the two sections below**:
+      - **Select Components**: Check *Add a Git Bash Profile to Windows Terminal*
+
+      ![Select Component](../images/01-Select-Components.png)
+
+      - **Initial Branch**: Select *Override the default branch name for new repositories*, leave `main` as the branch name
+
+      ![Initial Branch](../images/02-Default-Branch.png)
 
    - [ ] When the installation is complete, press the `<Windows>` key and type `git` into the search box to find the `git bash` app
 
